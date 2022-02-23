@@ -20,7 +20,7 @@ public class Program
         {
             greeting = "Good morning!";
         }
-        else if (timeOfDay >= 12 && timeOfDay <= 18)
+        else if (timeOfDay > 12 && timeOfDay <= 18)
         {
             greeting = "Good afternoon!";
         }
