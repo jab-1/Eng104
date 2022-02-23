@@ -14,20 +14,9 @@ public class Program
 
     public static string Greeting(int timeOfDay)
     {
-
-        string greeting;
-        if (timeOfDay >= 5 && timeOfDay <= 12)
-        {
-            greeting = "Good morning!";
-        }
-        else if (timeOfDay > 12 && timeOfDay <= 18)
-        {
-            greeting = "Good afternoon!";
-        }
-        else
-        {
-            greeting = "Good evening!";
-        }
-        return greeting;
+        return timeOfDay < 0 || timeOfDay > 24 ? throw new Exception("Invalid value")
+            : timeOfDay >= 5 && timeOfDay <= 12 ? "Good morning!"
+            : timeOfDay > 12 && timeOfDay <= 18 ? "Good afternoon!"
+            : "Good evening!";
     }
 }
