@@ -2,4 +2,4 @@
 
 ## C# Core
 
-Intro to Visual Studio
+Intro to Visual Studio and stuff
