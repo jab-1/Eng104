@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators_Tests", "Operators_Tests\Operators_Tests.csproj", "{7A8B1790-B00A-4012-A827-9D38CA9AA91E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowApp", "ControlFlowApp\ControlFlowApp.csproj", "{3B09F675-2302-4166-9FE9-0D7A4A19035F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7A8B1790-B00A-4012-A827-9D38CA9AA91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8B1790-B00A-4012-A827-9D38CA9AA91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8B1790-B00A-4012-A827-9D38CA9AA91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B09F675-2302-4166-9FE9-0D7A4A19035F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B09F675-2302-4166-9FE9-0D7A4A19035F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B09F675-2302-4166-9FE9-0D7A4A19035F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B09F675-2302-4166-9FE9-0D7A4A19035F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

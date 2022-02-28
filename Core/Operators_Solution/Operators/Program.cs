@@ -56,7 +56,34 @@ public class Program
 
         //what will the values of m, j and k be
 
+        //bool isWearingParachute = false;
 
+        //if (isWearingParachute || JumpOutOfAirplane())
+        //{
+        //    Console.WriteLine("Congrats, you have made a successful jump!");
+        //}
+
+        //string greeting = "All right?";
+        //if (greeting != null && greeting.ToLower().StartsWith('a'))
+        //{
+        //    Console.WriteLine(greeting + " starts with 'a'");
+        //}
+
+        int num1 = 5;
+        int num2 = 10;
+
+        if (num1 == 5 ^ num2 == 190)
+        {
+            Console.WriteLine("Exclusive or satisfied");
+        }
+
+
+    }
+
+    private static bool JumpOutOfAirplane()
+    {
+        Console.WriteLine("Jump");
+        return true;
     }
 
     public static bool EvenOdd(int num)
