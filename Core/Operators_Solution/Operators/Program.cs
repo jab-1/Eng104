@@ -30,19 +30,56 @@ public class Program
         //var weeksToBirthday = todalDaysToBirthday / daysInAWeek;
         //var days = todalDaysToBirthday % daysInAWeek;
         //Console.WriteLine("Weeks: " + weeksToBirthday + " Days: " + days);
+
+        //const int NUM_ROWS = 2;
+        //const int NUM_COLS = 5;
+        //bool running = true;
+        //int row = 0;
+        //int col = 0;
+        //int spriteNo = -1;
+        //while (running)
+        //{
+        //    spriteNo++;
+        //    spriteNo %= NUM_ROWS * NUM_COLS;
+        //    row = spriteNo / NUM_COLS;
+        //    col = spriteNo % NUM_COLS;
+        //}
+
+        //int x = 5;
+        //x += 5;
+        ////x = x + 5;
+        //x %= 5;
+        ////x = x % 5
+        ///
+        //int j = 5, k = 3, m = 4;
+        //m += +j++ + ++k;
+
+        //what will the values of m, j and k be
+
+
     }
 
-    public static bool EvenOff(int num)
+    public static bool EvenOdd(int num)
     {
         //Will reture true if num is even, false if it is odd
-        return true;
+        return num % 2 == 0;
     }
 
     public static int FinSumDiv3And5(int n)
     {
         //it will add up all numbers between 1 and n inclusive
+        //If divisisble by 3 or 5
         //And return this sum
+        //return Enumerable.Range(1, n + 1).Where(c => c % 5 == 0 || c % 3 == 0).Sum();
 
-        return -1;
+        int sum = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            if (i % 3 == 0 || i % 5 == 0)
+            {
+                sum += sum;
+            }
+        }
+        return sum;
     }
 }
