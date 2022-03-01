@@ -28,17 +28,20 @@ public class Program
         //    Console.WriteLine("I'm always run whatever happens");
         //}
 
-        try
-        {
-            Console.WriteLine("Stanni's mark is 82: " + Grade(82));
-            Console.WriteLine("Nish's mark is -23: " + Grade(-23));
-        }
-        catch (GradeException ex)
-        {
+        //try
+        //{
+        //    Console.WriteLine("Stanni's mark is 82: " + Grade(82));
+        //    Console.WriteLine("Nish's mark is -23: " + Grade(-23));
+        //}
+        //catch (GradeException ex)
+        //{
 
-            Console.WriteLine("Invalid data, please try again");
-            Console.WriteLine(ex.Message);
-        }
+        //    Console.WriteLine("Invalid data, please try again");
+        //    Console.WriteLine(ex.Message);
+        //}
+
+
+
 
     }
 
