@@ -54,13 +54,42 @@ public class Program
 
         //OneDArray();
         //MultiDArrays();
-        char[,] gridTwo =
+        //char[,] gridTwo =
+        //{
+        //    { 'a','b' },
+        //    {'c' ,'d'},
+        //    {'e' ,'f'},
+        //    {'g' ,'h'}
+        //};
+        //foreach (char c in gridTwo)
+        //{
+        //    Console.WriteLine(c);
+        //}
+        //JaggedArrays();
+
+        string[] trainingGroup = { "Laura", "Steven", "James", "Jab", "Ned" };
+        string[][] spartaAcademy = new string[][]
         {
-            { 'a','b' },
-            {'c' ,'d'},
-            {'e' ,'f'},
-            {'g' ,'h'}
+            new string[]{ "Marian", "Goncalo", "Seb", "Stanni", "David", "Gaurav" },
+            trainingGroup
         };
+        foreach (string[] arr in spartaAcademy)
+        {
+            Console.WriteLine();
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+
+    public static void JaggedArrays()
+    {
+        int[][] intJArray = new int[2][];
+        intJArray[0] = new int[4];
+        intJArray[1] = new int[2];
+        intJArray[0][2] = 3;
+        intJArray[1][0] = 5;
     }
     public static void MultiDArrays()
     {
