@@ -42,7 +42,7 @@ public class Program
         //Console.WriteLine(spartaString);
         //StringInterpolation("Nish");
 
-        var num1 = 2;
+        //var num1 = 2;
         //var num2 = 3;
         //var fString = $"{num1} to the power of {num2} is {Math.Pow(num1,num2)}";
         //Console.WriteLine(fString);
@@ -50,9 +50,47 @@ public class Program
         //var fString2 = $"That will be {num1/3.0:C2},  please";
         //var fString3 = $"You received {1 / 10.0:P2}  in your test";
         //Console.WriteLine(fString3);
-        ParsingStrings();
+        //ParsingStrings();
 
+        //OneDArray();
+        //MultiDArrays();
+        char[,] gridTwo =
+        {
+            { 'a','b' },
+            {'c' ,'d'},
+            {'e' ,'f'},
+            {'g' ,'h'}
+        };
     }
+    public static void MultiDArrays()
+    {
+        int[,] grid = new int[2, 4];
+        grid[0,1] = 6;
+        grid[1,0] = 8;
+        grid[1,3] = 10;
+    }
+    public static void OneDArray()
+    {
+       
+        int[] myIntArray = { 12, 34, 23, 45, 56 };
+        //Array.Reverse(myIntArray);
+        //Array.ForEach(myIntArray, x => Console.WriteLine(x));
+
+        //myIntArray.OrderBy(x => x);
+        //myIntArray.OrderByDescending(x => x);
+        //var traineesArray = new string[]{ "David", "Marian", "Stanni" };
+        //var traineesArray2 = new string[3];
+        //traineesArray[0] = "Jab";
+        //traineesArray[1] = "James";
+        //traineesArray[2] = "Laura";
+
+        //traineesArray2[0] = "Jab";
+        //traineesArray2[1] = "James";
+        //traineesArray2[2] = "Laura";
+        ////traineesArray2[3] = "Taylor Swift";
+    }
+
+
 
     public static void ParsingStrings()
     {
