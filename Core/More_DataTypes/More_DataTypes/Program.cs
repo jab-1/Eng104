@@ -1,12 +1,34 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Text;
 
 namespace More_DataTypes;
 
+public enum Suit
+{
+    HEARTS, CLUBS, DIAMONDS, SPADES
+}
+
+public enum Size
+{
+    SMALL = 10, MEDIUM = 25, LARGE =50
+}
+
+public class Trainee
+{
+    private readonly string _name;
+    public Trainee(string name)
+    {
+        _name = name;
+    }
+
+}
 public class Program
 {
     public static void Main (string[] args)
     {
+        //var trainee = new Trainee("Nish");
+
         ////STRINGS
 
         //string steven = "Steven Maddox";
@@ -67,20 +89,99 @@ public class Program
         //}
         //JaggedArrays();
 
-        string[] trainingGroup = { "Laura", "Steven", "James", "Jab", "Ned" };
-        string[][] spartaAcademy = new string[][]
+        //string[] trainingGroup = { "Laura", "Steven", "James", "Jab", "Ned" };
+        //string[][] spartaAcademy = new string[][]
+        //{
+        //    new string[]{ "Marian", "Goncalo", "Seb", "Stanni", "David", "Gaurav" },
+        //    trainingGroup
+        //};
+        //foreach (string[] arr in spartaAcademy)
+        //{
+        //    foreach (var item in arr)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
+
+        //DateTimeMethods();
+
+        //var birthDay = new DateTime(1989,11, 2);
+        //Console.WriteLine(birthDay);
+        //Console.WriteLine(birthDay.ToString("y-M-d"));
+        //Console.WriteLine(birthDay.ToString("dd/MM/yy"));
+        //Console.WriteLine(birthDay.ToString("ddd.MMM.yyy"));
+        //Console.WriteLine(birthDay.ToString("MMMM.yyyy ddd"));
+
+        //TimeSpan myAge = DateTime.Now - birthDay;
+        ////Console.WriteLine(myAge);
+        //var myAgeInYears = myAge.Days / 365.25;
+        //Console.WriteLine($"Nish is {myAgeInYears:N1} years old to one decimal point");
+        //Console.WriteLine($"Nish is {myAgeInYears:N0} years old");
+
+        ////DateOnly
+        //var myDate = new DateOnly(1989, 11, 2);
+        //Console.WriteLine(myDate);
+        //var today = DateTime.Now;
+        //DateOnly today1 = DateOnly.FromDateTime(today);
+        //Console.WriteLine(today);
+        //Console.WriteLine(today1);
+
+        ////Stop watch
+        //var stopwatch = new Stopwatch();
+        //stopwatch.Start();
+        //long total = 0;
+        //for (int i = 0; i < 1000; i++)
+        //{
+        //    total += i;
+        //}
+        //stopwatch.Stop();
+        //Console.WriteLine(stopwatch.Elapsed);
+        //Console.WriteLine(stopwatch.ElapsedMilliseconds);
+        //Console.WriteLine(stopwatch.ElapsedTicks);
+        // Enum();
+
+        //var mediumValue = (int)Size.MEDIUM;
+        //var mySize = (Size)50;
+
+        //var anotherSuit = Enum.Parse(typeof(Suit), "CLUBS");
+
+        //const int dozen = 12;
+        //dozen = 13;
+    }
+
+    public static void Enums()
+    {
+        Suit theSuit = Suit.HEARTS;
+        //if (theSuit == suits.SPADES)
+        //{
+        //    Console.WriteLine($"Suit is {suits.SPADES}");
+        //}
+        //else
+        //{
+        //    Console.WriteLine($"Suit is {theSuit} not {suits.SPADES}");
+
+        //}
+
+        switch (theSuit)
         {
-            new string[]{ "Marian", "Goncalo", "Seb", "Stanni", "David", "Gaurav" },
-            trainingGroup
-        };
-        foreach (string[] arr in spartaAcademy)
-        {
-            Console.WriteLine();
-            foreach (var item in arr)
-            {
-                Console.WriteLine(item);
-            }
+            case Suit.HEARTS:
+                Console.WriteLine("Thank You");
+                break;
+            default:
+                Console.WriteLine("Goodbye");
+                break;
+  
         }
+    }
+    public static void DateTimeMethods()
+    {
+        var now = DateTime.Now;
+        Console.WriteLine($"The time now is {now}\n");
+        //Console.WriteLine($"In ticks this is {now.Ticks}");
+        //Console.WriteLine(DateTime.MinValue);
+        //Console.WriteLine(DateTime.MaxValue);
+        var tomorrow = now.AddDays(1);
+        Console.WriteLine(tomorrow);
     }
 
     public static void JaggedArrays()
