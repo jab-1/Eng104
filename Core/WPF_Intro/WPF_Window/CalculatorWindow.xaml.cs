@@ -57,7 +57,7 @@ namespace WPF_Window
 
         private void tbxNum2_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var success = double.TryParse(tbxNum1.Text, out double num2);
+            var success = double.TryParse(tbxNum2.Text.Trim(), out double num2);
             if (success)
             {
                 _calulator.Num2 = num2;
